@@ -1,0 +1,8 @@
+# never commit .htaccess files!
+# this is only here for demonstration and acafemic purposes
+# to use this code copy this code into your .htaccess file or rename this file to .htaccess
+
+RewriteEngine on
+RewriteBase /
+RewriteCond $1 !^(index\.php|uploads|assets|robots\.txt|favicon\.gif)
+RewriteRule ^(.*)$ /index.php/$1 [L]
